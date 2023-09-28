@@ -10,10 +10,9 @@ import fs from "fs";
 import { generateRandomString } from "./file.helpers";
 import { loadFonts } from "./font.hellper";
 const tempDirectory = path.resolve(__dirname, "../tmp/");
-const assetsDirectory = path.resolve(__dirname, "../assets/");
 
 export const generateImage = async (data: any, bg: string) => {
-  // loadFonts();
+  loadFonts();
   const canvasWidth = data.size.width;
   const canvasHeight = data.size.height;
   const canvas = createCanvas(canvasWidth, canvasHeight);
