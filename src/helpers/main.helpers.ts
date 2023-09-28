@@ -32,8 +32,6 @@ export const generateImage = async (data: any, bg: string) => {
   ctx.drawImage(image, x, y, newWidth, newHeight);
   //
   data.items.forEach((item: any) => {
-    console.log(item.font);
-
     ctx.font = `${item.fontSize}px ${item.font}`;
     ctx.fillStyle = item.color;
     ctx.fillText(item.content, item.position.x, item.position.y);
