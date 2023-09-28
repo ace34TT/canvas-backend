@@ -1,0 +1,12 @@
+{
+  "name": "postal card",
+  "size": { "width": 1200, "height": 1800 },
+  "items": [
+    {
+      "fontSize": 64,
+      "position": { "x": 250, "y": 250 },
+      "content": "Hello world",
+      "color": "#fff"
+    }
+  ]
+}
