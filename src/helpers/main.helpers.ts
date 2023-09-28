@@ -1,10 +1,4 @@
-import {
-  CanvasGradient,
-  CanvasPattern,
-  createCanvas,
-  loadImage,
-  registerFont,
-} from "canvas";
+import { createCanvas, loadImage } from "canvas";
 import path from "path";
 import fs from "fs";
 import { generateRandomString } from "./file.helpers";
