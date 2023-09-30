@@ -3,6 +3,6 @@ import upload from "../middlewares/multer.middleware";
 import { imageGenerationHandler } from "../controllers/main.controllers";
 const router = express.Router();
 
-router.post("/", upload.single("file"), imageGenerationHandler);
+router.post("/", imageGenerationHandler);
 
 export { router as MainRoutes };

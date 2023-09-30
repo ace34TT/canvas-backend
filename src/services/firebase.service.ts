@@ -3,20 +3,19 @@ import path from "path";
 const tempDirectory = path.resolve(__dirname, "../tmp/");
 admin.initializeApp({
   credential: admin.credential.cert({
-    projectId: "file-server-f5b74",
-    clientEmail:
-      "firebase-adminsdk-c9in6@file-server-f5b74.iam.gserviceaccount.com",
+    projectId: "canvas-effa7",
+    clientEmail: "firebase-adminsdk-qsoif@canvas-effa7.iam.gserviceaccount.com",
     privateKey:
-      "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/8bsk7+AP0qFn\nqdhTlNAmLGiEIxCalKNO4rARF+E1CNJHr1DRPNaxFgnILBtgORku7BPQm/FlESRD\nVe01w6XTzX831iX8sT89Cz/UNY+bbAOYDsq1wEMiD/G+2slktjhwP3V36c0jtwYy\nSalXolvjNzulENfpMR8oFImfPzi+wksBxlJRbQPiN0HQttI/tiWxLqgikMoCVtYQ\ntPjGC0ecju05MELm2Fw2P+9XJNE2sOhoc1qj2paomkrg46JLoVIxfNikpAFSxi1p\nb+Y3zoybfdKULpOlqioUeAJnKk3S/U+n+8XzuqBsIXYV2Ro1FmypTJ19fmydkW1t\nV4h1kEDnAgMBAAECggEAGaeeG1xCZusArsHZS6aWwZtq5spnBDo8r6UF4mr+K1//\n9xvcIfNPQMEQ0qPujshi8M4WAept89O8NJHOEEMTrYEIcXaagjFQogCYae00whHI\nUzEa7/sAHhPifF9yzpa6aWpZ8Yqa5Byo49zLmQ522KI/wxrCuQTbRLimAlZpZ7mG\nD5TKe7PtW+Wt0lHuxRT3SjvXo32t3U3vvJuJo2INQMBTOOm1HpHYIGZKVjbP0AVc\n6qoD2VxnyL7gOiyz4eGanXtNCv4KenykIlqXtt9InsfXT08Jj72E9V2awKcBuX9X\nN7bFxaBXv8lqxvbNHoWaM7G1pdEHo56H1IDoR14tIQKBgQDmJu+JcUeulF5kJ/Kd\nfLrjCCQRV1M3G3RxLLJL903CmCEYaVP3O3bmrsBmdrOW0g4DH+TBlnp3lEFPHSmw\nOYdEjxZ8OrnKIuM4RT96V0wYFQ+6CeRwnKRZ1mD4XsCwCJSzaNbUQ7vNpT9Bdw5P\nLnCSfaNxJWfT/EeJHm0X0O0thwKBgQDVgEnUIKYgt9T8slhNoc3CmnQ6X5gTFcSK\nBTAZR68jAEMawYrI82DppjsrZixmxtuYQlHDyI6KrtuQOmmtI98IW0+9Y8KwZg1n\nabH2BsuBGtK+244prQiKS3zuHXY+ztWZqJrAjEOUa7IKSm5DUqvZ/I1TdifxWqGZ\nSR9JMgQpoQKBgQDCK5ktsLeULzKPdzB187RMNCMRykW3mV8c2GO4OXWONgC98qbX\nT4DZ0BccmwqatK8DrdW2CXlbB2YuE+GG/pIDomCLAJScV+CxKaMLWTkmnCY/g3cK\nFu2FqZr4ECCqoyKpVkrgnCCGt+JtHb+hyAFLZdoNbExziUTlBxls3WQsYwKBgBO5\nuZh+t7qYIXaDZ8Msat1K9egawusofLMfzZTYWacLNCf5r7/nNJIByL+2ve10+/7y\nSamkEv9fLmwB6ZeUk9uqzBA8clVn6F8glc+cSxsPhl8Z2+Wf1gUo+k7pq+4boAKF\nYF7f1rKUzKtEuzE/Jx+JxOjsJr6W2A1Ygyp5E4dhAoGAL8n9EieUKxq+Twr9IHaM\nhEUuk/pwR19Io/MyQXxB+pQMV8+daKWaGHHbBfgPfy4XRp/9cn0aH1/US+43Lsiu\nhuo2ghT38aDy90hK0L8U2j7hdnr4bKpH/7HWwkkUEHG2AjC22iuRYsAbXGghMR32\neXF2vrv+azfqBWT/FR9g9/g=\n-----END PRIVATE KEY-----\n",
+      "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYAzRLMptVDxIr\n1bVNjkFNExnVrcpQNEXqu4CC9jByX+O8TML3owYQm2kP5xvh7vGv0/5mCaBp8fgi\na+gfgXwTsTqk7huC+yk1A1kOtiOeu83O5OBHg7WZD+IRM/oxfXp9MG2nS+ShFK8U\nucTFjRZFND45QOSRKKFAx3ZLRB78Mv5ONKKDc+9sQyKnaQb26QjEtNiOK/8MWMZ2\nkVeaOL0DZZLW22bYvXLQtJ1beO3huHR7PGiCzESCKp26ApYxviRge6OpIOpqzlTn\ns9tObVZJKGMlczUMFPSLCjo6rEZV3S2IuFDm1nRNsg/uUqylKce0HNIemeWzMjJF\nuBUIphKlAgMBAAECggEAExjR9MF8kKzGRmIAdygQLZfg9r5wzG8ounLIVAuMLg48\nXL9S/gvJuwPfKMuKrfFYBRQPoW+DqtOmbeKbBHw+o3WwLaCpLaUSefG7+jRpGKu0\n0RFhWLKj+YDskGc0fwupu/j9yZbn99GSpjqpTP0qx1JnH8e2f0L4sRvt0UpTTzEC\nJ8uRFV1gz0Wrr9+JbDedT6SDXKGNiKvK1Dpt3LIfSnuB3BbjxTBUfndlLudfwSpQ\nfe9YBPpNAAG7Rc4skqdYmiCtIN9P5baKT1KpXGeXyAnCNd5qrpEYIL5r28rbU9Ai\nOD4Z50e+EECS7qBb+O1dyr7SEPwPoo02pWwUsSALkQKBgQDRruWFTty9oVw9pOro\nJ/e83t9zoJjvKIr6c0TrqCxkpdu//JX/ei+uOX1d6r1JQ/Zyof1xBYJyCc0DB2S+\n59StYj1eZxzVzhq/U+EXyAPSNeoI7io0i/9O5cOkkcq8DwhAzD3mWaFn19MJvrg6\n6LbHHgznPd1qcujT/izCN7uuVQKBgQC5lynWOqG21jJ94xLUvmJX8j7NBD6FjFft\n82LeSaeKai8jBClolF2ZOL/oFPN/WXt3hZAnMza/PLKqz4z4AxtimL7hbFIF+1wQ\nNtTdWJjxczRVJM3O5ifcm7iB/If8weaXsxX04dbJOJbrqDKou0PRp6pTV6IyLZSx\nmQ5u5RKDEQKBgQDN+mwXj0fCtI9DMw1bb1+q1plVIa76SK51puRORs8NM+zx5POI\nmwPZtznTF3RIU432P/ESpKHm2n/c+Ndbvasrg3Tblpk54pRd3M0iqmYuiq3ThfpJ\n0jjDzWtp75njMTUfSkOIVAX9V4NFcGfT3qUmZvuv8RLfre/PyEE5rLweXQKBgHHu\nQlipFa1QQR7WzzCaz3R92d+xw0/on/ILf55GSPvHw7gTTfhNXEg7dlPayMBdBlaR\nP7VQ00MC2AvT7g4ymhUk/8kS3ied7x5lCrf3M6zFtFKwjUd+MupTDil+BV09C3oF\nDm2OVnSgsMVqM+8xRqjl7MHNAl0bbjS4aQvaxEqBAoGALSS04DyS1j0DsFragbHN\nl6z3qBJ0cl6T//KRBW/d2zc7WawlpeELmj7ROEpUNkKCQ7QY8dtWRBYTUdqk7Xz3\nAN/gUmB7HssAr5YbtZD0AvM2gCnVLVsnImMNXJXqb6exppj1BqdfGW+9CQSOmBsr\nCqD+DbN2ZDp577+aNKT3uVE=\n-----END PRIVATE KEY-----\n",
   }),
-  storageBucket: "gs://file-server-f5b74.appspot.com",
+  storageBucket: "gs://canvas-effa7.appspot.com",
 });
 export const uploadFileToFirebase = async (filename: string) => {
   const bucket = admin.storage().bucket();
   await bucket.upload(path.resolve(tempDirectory + "/" + filename), {
-    destination: "canvas/" + filename,
+    destination: "results/" + filename,
   });
-  const fileRef = bucket.file("canvas/" + filename);
+  const fileRef = bucket.file("results/" + filename);
   await fileRef.makePublic();
   const publicUrl = `https://storage.googleapis.com/${bucket.name}/${fileRef.name}`;
   return publicUrl;
@@ -30,4 +29,14 @@ export const deleteFile = async (filename: string) => {
     console.log(error.message);
     throw new Error(error.message);
   }
+};
+export const getFile = async (filename: string) => {
+  let bucket = admin.storage().bucket();
+  let file = bucket.file("models/" + filename);
+  // Fetch the download URL
+  const url = await file.getSignedUrl({
+    action: "read",
+    expires: "03-09-2491",
+  });
+  return url[0];
 };

@@ -5,13 +5,11 @@ import { uploadFileToFirebase } from "../services/firebase.service";
 
 export const imageGenerationHandler = async (req: Request, res: Response) => {
   try {
-    console.log(JSON.parse(req.body.data).items);
-    const result = (await generateImage(
-      JSON.parse(req.body.data),
-      req.file?.filename!
-    )) as string;
+    console.log(req.body.data);
+
+    const result = (await generateImage(req.body.data)) as string;
     const firebaseUrl = await uploadFileToFirebase(result);
-    deleteImage(req.file?.filename!);
+
     deleteImage(result);
     return res.status(200).json({
       url: firebaseUrl,
